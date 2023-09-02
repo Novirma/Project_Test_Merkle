@@ -1,0 +1,170 @@
+{
+	"info": {
+		"_postman_id": "f2d98aee-90ba-423f-bad4-f8e2539426cc",
+		"name": "API_Merkle",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "27161165",
+		"_collection_link": "https://www.postman.com/bimbel-ind/workspace/helloworld/collection/27161165-f2d98aee-90ba-423f-bad4-f8e2539426cc?action=share&source=collection_link&creator=27161165"
+	},
+	"item": [
+		{
+			"name": "Merkle_Innovation",
+			"item": [
+				{
+					"name": "Guest Form",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6Ik1lcmtsZSIsImlhdCI6MTY5MzY3ODQwMCwiZXhwIjoxNjkzNjgyMDAwfQ.id9mTzq9WjUdAeXFeg1KZzzFNL8YEBLTlb5vuUzOZ-U",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nama\" : \"Rehan Novirma\",\r\n    \"alamat\" : \"Thomang\",\r\n    \"nomor_telepon\" : \"0192783\",\r\n    \"catatan\" : \"Selamat Menikah\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:5000/guest-form",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"guest-form"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Note Gallery",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:5000/guest-form",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"guest-form"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create User Tamu",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6Ik1lcmtsZSIsImlhdCI6MTY5MzY3OTA4OSwiZXhwIjoxNjkzNjgyNjg5fQ.pMLd8erMbIT-ttUb8rTJt742sfQ8GYG8EoODA55y1gw",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "username",
+									"value": "admin",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "12345",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:5000/user-tamu",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"user-tamu"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get User Tamu",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6Ik1lcmtsZSIsImlhdCI6MTY5MzY3ODQwMCwiZXhwIjoxNjkzNjgyMDAwfQ.id9mTzq9WjUdAeXFeg1KZzzFNL8YEBLTlb5vuUzOZ-U",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "localhost:5000/user-tamu",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"user-tamu"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Login",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6Ik1lcmtsZSIsImlhdCI6MTY5MzY3Njc1OSwiZXhwIjoxNjkzNjgwMzU5fQ.Yu5APN96m2bZgl5Vct_jA8RNW8OfZGn6tN6MG_5uX0M",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "username",
+									"value": "Merkle",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "12345",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:5000/login",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"login"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
